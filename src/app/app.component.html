@@ -1,0 +1,29 @@
+<app-responsive-toolbar [title]="title" (setGridColumns)="toggleGridColumns()">
+</app-responsive-toolbar>
+<div class="content" fxLayout="row wrap" fxLayoutGap="16px grid">
+  <div
+    [fxFlex]="100 / gridColumns + '%'"
+    fxFlex.xs="100%"
+    fxFlex.sm="50%"
+    *ngFor="let pilot of pilotList"
+  >
+    <mat-card class="mat-elevation-z4">
+      <mat-card-header>
+        <mat-card-title>{{ pilot.nick }}</mat-card-title>
+      </mat-card-header>
+     
+      <div class="pilot-card">
+        <img
+          mat-card-image
+          src="https://www.clipartmax.com/png/full/131-1313893_account-avatar-face-head-person-profile-user-comments-person-head-icon-png.png"
+        />
+      </div>
+        
+      
+      <mat-card-content>
+        <p>{{ pilot.fullname }}</p>
+      </mat-card-content>
+     
+    </mat-card>
+  </div>
+</div>
