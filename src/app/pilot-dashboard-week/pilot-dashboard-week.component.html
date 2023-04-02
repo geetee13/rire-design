@@ -1,0 +1,15 @@
+<p>
+pilot-dashboard-week works!
+</p>
+
+<button (click)="onReset()">RESET</button>
+<br>
+{{selectedState.getDDMM()}}
+<br> <br>
+    <mat-button-toggle-group
+     [value]="selectedState"
+     (change)="onChange($event)">
+     <mat-button-toggle [value]="week0">Woche<br>{{week0.getDDMM()}}</mat-button-toggle>
+     <mat-button-toggle [value]="week1">Woche+1<br>{{week1.getDDMM()}}</mat-button-toggle>
+     <mat-button-toggle [value]="week2">Woche+2<br>{{week2.getDDMM()}}</mat-button-toggle>
+  </mat-button-toggle-group>

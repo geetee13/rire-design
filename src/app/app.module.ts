@@ -11,9 +11,11 @@ import { MatButtonModule } from "@angular/material/button";
 import { MatMenuModule } from "@angular/material/menu";
 import { MatIconModule } from "@angular/material/icon";
 import { MatDividerModule } from "@angular/material/divider";
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { ResponsiveToolbarComponent } from './responsive-toolbar/responsive-toolbar.component';
 import { UserSelectComponent } from "./user-select/user-select.component";
+import { PilotDashboardWeekComponent } from "./pilot-dashboard-week/pilot-dashboard-week.component";
 
 @NgModule({
   imports: [
@@ -26,9 +28,12 @@ import { UserSelectComponent } from "./user-select/user-select.component";
     MatMenuModule,
     MatIconModule,
     MatDividerModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatButtonModule,
+    MatButtonToggleModule,
+
   ],
-  declarations: [AppComponent, UserSelectComponent, ResponsiveToolbarComponent],
+  declarations: [AppComponent, UserSelectComponent, PilotDashboardWeekComponent, ResponsiveToolbarComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
