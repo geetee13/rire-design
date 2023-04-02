@@ -12,6 +12,7 @@ import { MatMenuModule } from "@angular/material/menu";
 import { MatIconModule } from "@angular/material/icon";
 import { MatDividerModule } from "@angular/material/divider";
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatListModule} from '@angular/material/list';
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { ResponsiveToolbarComponent } from './responsive-toolbar/responsive-toolbar.component';
 import { UserSelectComponent } from "./user-select/user-select.component";
@@ -31,7 +32,7 @@ import { PilotDashboardWeekComponent } from "./pilot-dashboard-week/pilot-dashbo
     FlexLayoutModule,
     MatButtonModule,
     MatButtonToggleModule,
-
+    MatListModule,
   ],
   declarations: [AppComponent, UserSelectComponent, PilotDashboardWeekComponent, ResponsiveToolbarComponent],
   bootstrap: [AppComponent]
