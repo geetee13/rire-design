@@ -1,3 +1,4 @@
-.weekselect mat-button-toggle {
-  white-space: normal
+button,  mat-button-toggle {
+  white-space: normal;
+  line-height: unset;
 }
