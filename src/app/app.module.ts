@@ -13,6 +13,7 @@ import { MatIconModule } from "@angular/material/icon";
 import { MatDividerModule } from "@angular/material/divider";
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { ResponsiveToolbarComponent } from './responsive-toolbar/responsive-toolbar.component';
+import { UserSelectComponent } from "./user-select/user-select.component";
 
 @NgModule({
   imports: [
@@ -27,7 +28,7 @@ import { ResponsiveToolbarComponent } from './responsive-toolbar/responsive-tool
     MatDividerModule,
     FlexLayoutModule
   ],
-  declarations: [AppComponent, ResponsiveToolbarComponent],
+  declarations: [AppComponent, UserSelectComponent, ResponsiveToolbarComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
